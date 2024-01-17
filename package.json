@@ -1,0 +1,20 @@
+{
+  "name": "nogamecontract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy-erc": "npx hardhat compile && npx hardhat run --network obscuro scripts/deployERC20.js",
+    "deploy-game": "npx hardhat compile && npx hardhat run --network obscuro scripts/deploy.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.4"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "ten-hardhat-plugin": "^0.0.1"
+  }
+}
